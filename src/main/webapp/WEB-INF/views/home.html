@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/caculator/submit}" method="post">
+  <input type="number" name="number1">
+  <select name="option">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+  </select>
+  <input type="number" name="number2">
+    <input type="submit" value="submit">
+
+</form>
+<h1>= [[${result}]]</h1>
+</body>
+</html>
